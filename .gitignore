@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# OAuth credentials — NEVER commit these
+credentials/credentials.json
+credentials/token.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Agent/IDE local configs (contains absolute paths)
+.agents/mcp_config.json
