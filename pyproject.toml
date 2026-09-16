@@ -19,3 +19,6 @@ dependencies = [
 [project.scripts]
 mcp-gmail = "src.server:run"
 mcp-gmail-auth = "src.auth:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
