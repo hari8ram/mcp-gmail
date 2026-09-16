@@ -109,7 +109,7 @@ python3 -m venv venv
 source venv/bin/activate        # macOS/Linux
 # venv\Scripts\activate         # Windows
 
-# Install dependencies
+# Install dependencies (or install as package with pip install -e .)
 pip install -r requirements.txt
 ```
 
@@ -172,7 +172,8 @@ MAX_RESULTS=20
 
 ```bash
 source venv/bin/activate
-python -m src.auth
+# Run the auth entrypoint (or python -m src.auth)
+mcp-gmail-auth
 ```
 
 This will:
@@ -190,7 +191,8 @@ After this step, `token.json` is saved and will be auto-refreshed forever — yo
 
 ```bash
 source venv/bin/activate
-python -m src.server
+# Start the server (or python -m src.server)
+mcp-gmail
 ```
 
 You should see:
@@ -283,8 +285,8 @@ Skills are repeatable, prompt-engineered workflows that the AI can execute perfe
 
 | Command | Description |
 |---------|-------------|
-| `python -m src.auth` | Run first-time OAuth2 authorization |
-| `python -m src.server` | Start the MCP server |
+| `mcp-gmail-auth` | Run first-time OAuth2 authorization (Alternative: `python -m src.auth`) |
+| `mcp-gmail` | Start the MCP server (Alternative: `python -m src.server`) |
 
 ---
 
